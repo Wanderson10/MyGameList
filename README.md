@@ -4,6 +4,7 @@
 - [Documentação da API](#documentação-da-api)
   - [Tabela de Conteúdos](#tabela-de-conteúdos)
   - [1. Visão Geral](#1-visão-geral)
+  - [Diagrama ER](#diagrama-er)
   - [2. Início Rápido](#2-início-rápido)
     - [2.1. Instalando Dependências](#21-instalando-dependências)
     - [2.2 Variáveis de Ambiente](#22-variáveis-de-ambiente)
@@ -153,6 +154,19 @@ Visão geral do projeto, um pouco das tecnologias usadas.
 A URL base da aplicação:
 
 https://dubairrobackend.onrender.com/
+
+
+
+
+##  Diagrama ER
+
+[ Voltar para o topo ](#tabela-de-conteúdos)
+
+Diagrama ER da API definindo bem as relações entre as tabelas do banco de dados.
+
+![DER][(MyGameList.PDF)]
+
+
 
 ---
 ## 2. Início Rápido
@@ -1167,26 +1181,26 @@ Vazio
 
 O objeto User é definido como:
 
-| Campo         | Tipo     | Descrição                               |
-| ------------- | -------- | --------------------------------------- |
-| id            | number   | Identificador único de review           |
-| review        | string   | avaliação do game feito pelo usuario.   |
-| created_at    | date     | Data de cadastro de criação da review   |
-| user          | number   | id do usuario que fez a review.         |
-| game          | number   | id do game que esta recebendo a review  |
-| rate          | number   | nota de 0 a 10 definida pelo usuario    |
-| user_email    | string   | email do usuario que fez a review       |
+| Campo          | Tipo     | Descrição                               |
+| -------------  | -------- | --------------------------------------- |
+| id             | number   | Identificador único de review           |
+| review         | string   | avaliação do game feito pelo usuario.   |
+| created_at     | date     | Data de cadastro de criação da review   |
+| user           | number   | id do usuario que fez a review.         |
+| game           | number   | id do game que esta recebendo a review  |
+| rate           | number   | nota de 0 a 10 definida pelo usuario    |
+| review_made_by | string   | email do usuario que fez a review       |
 
 
 ### Endpoints
 
 | Método | Rota           | Descrição                             |
 | ------ | -------------- | ------------------------------------- |
-| POST   | /pet           | Criação de uma review                 |
-| GET    | /pet           | Lista todos as reviews                |
-| GET    | /pet/:id       | Lista a review pelo id                |
-| PATCH  | /pet/:id       | Atualiza dados da review              |
-| DELETE | /pet/:id       | deleção da review                     |
+| POST   | /reviews/           | Criação de uma review                 |
+| GET    | /reviews/           | Lista todos as reviews                |
+| GET    | /reviews/:id       | Lista a review pelo id                |
+| PATCH  | /reviews/:id       | Atualiza dados da review              |
+| DELETE | /reviews/:id       | deleção da review                     |
 
 ---
 
