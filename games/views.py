@@ -15,6 +15,8 @@ class gameViews(generics.ListCreateAPIView):
 
 
 class gameDetailView(generics.RetrieveUpdateDestroyAPIView):
+    authentication_classes=[JWTAuthentication]
+    permission_classes =[IsAuthenticatedOrReadOnly]
     
     serializer_class = GameSerializer
   
@@ -22,6 +24,8 @@ class gameDetailView(generics.RetrieveUpdateDestroyAPIView):
 
     lookup_url_kwarg = 'game_id'
 class GameBulkDeleteView(generics.DestroyAPIView):
+    authentication_classes=[JWTAuthentication]
+    permission_classes =[IsAuthenticatedOrReadOnly]  
     queryset =Game.objects.all()
     serializer_class =GameSerializer
 

@@ -12,7 +12,7 @@ class ReviewSeializers(serializers.ModelSerializer):
     review_made_by = serializers.SerializerMethodField()
     class Meta:
       model= Review
-      fields=["id","review","user","game","rate",'email_usuario']
+      fields=["id","review","user","game","rate",'review_made_by']
       read_only_fields = ["id", "user"]
 
     def create(self, validated_data):
@@ -23,7 +23,7 @@ class ReviewSeializers(serializers.ModelSerializer):
             raise serializers.ValidationError( "You have already done a review for this game. you can edit or delete it or make review another  game ")
 
         return review
-    def get_email_usuario(self,obj:Review):
+    def get_review_made_by(self,obj:Review):
         return obj.user.username
     
     

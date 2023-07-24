@@ -45,6 +45,100 @@
     - [Corpo da Requisição:](#corpo-da-requisição-5)
     - [Exemplo de Response:](#exemplo-de-response-5)
     - [Possíveis Erros:](#possíveis-erros-5)
+  - [2. **user\_image**](#2-user_image)
+    - [Endpoints](#endpoints-1)
+    - [2.1. **Criação de uma imagem**](#21-criação-de-uma-imagem)
+    - [`/users/image/`](#usersimage)
+    - [Exemplo de Request:](#exemplo-de-request-6)
+    - [Corpo da Requisição:](#corpo-da-requisição-6)
+    - [Exemplo de Response:](#exemplo-de-response-6)
+    - [Possíveis Erros:](#possíveis-erros-6)
+    - [2.2 **listando todas as imagens**](#22-listando-todas-as-imagens)
+    - [`/users/image`](#usersimage-1)
+    - [Exemplo de Request:](#exemplo-de-request-7)
+    - [Corpo da Requisição:](#corpo-da-requisição-7)
+    - [Exemplo de Response:](#exemplo-de-response-7)
+    - [Possíveis Erros:](#possíveis-erros-7)
+    - [2.3 **listando imagem por id**](#23-listando-imagem-por-id)
+    - [`/users/image/:id`](#usersimageid)
+    - [Exemplo de Request:](#exemplo-de-request-8)
+    - [Corpo da Requisição:](#corpo-da-requisição-8)
+    - [Exemplo de Response:](#exemplo-de-response-8)
+    - [Possíveis Erros:](#possíveis-erros-8)
+    - [2.4 **editando imagem**](#24-editando-imagem)
+    - [`/users/image/:id`](#usersimageid-1)
+    - [Exemplo de Request:](#exemplo-de-request-9)
+    - [Corpo da Requisição:](#corpo-da-requisição-9)
+    - [Exemplo de Response:](#exemplo-de-response-9)
+    - [Possíveis Erros:](#possíveis-erros-9)
+    - [2.5 **Deletando Imagem**](#25-deletando-imagem)
+    - [`/users/image/:id`](#usersimageid-2)
+    - [Exemplo de Request:](#exemplo-de-request-10)
+    - [Corpo da Requisição:](#corpo-da-requisição-10)
+    - [Exemplo de Response:](#exemplo-de-response-10)
+    - [Possíveis Erros:](#possíveis-erros-10)
+  - [3. **Games**](#3-games)
+    - [Endpoints](#endpoints-2)
+    - [3.1 **Criação de um game**](#31-criação-de-um-game)
+    - [`/games`](#games)
+    - [Exemplo de Request:](#exemplo-de-request-11)
+    - [Corpo da Requisição:](#corpo-da-requisição-11)
+    - [Exemplo de Response:](#exemplo-de-response-11)
+    - [Possíveis Erros:](#possíveis-erros-11)
+    - [3.2 **listando Games**](#32-listando-games)
+    - [`/games/`](#games-1)
+    - [Exemplo de Request:](#exemplo-de-request-12)
+    - [Corpo da Requisição:](#corpo-da-requisição-12)
+    - [Exemplo de Response:](#exemplo-de-response-12)
+    - [Possíveis Erros:](#possíveis-erros-12)
+    - [3.3 **listando Games por id**](#33-listando-games-por-id)
+    - [`/games/:id`](#gamesid)
+    - [Exemplo de Request:](#exemplo-de-request-13)
+    - [Exemplo de Response:](#exemplo-de-response-13)
+    - [Possíveis Erros:](#possíveis-erros-13)
+    - [3.4. **Atualização do game**](#34-atualização-do-game)
+    - [`/games/:id`](#gamesid-1)
+    - [Exemplo de Request:](#exemplo-de-request-14)
+    - [Corpo da Requisição:](#corpo-da-requisição-13)
+    - [Exemplo de Response:](#exemplo-de-response-14)
+    - [Possíveis Erros:](#possíveis-erros-14)
+    - [3.5. \**deleção do game*](#35-deleção-do-game)
+    - [`/games/:id`](#gamesid-2)
+    - [Exemplo de Request:](#exemplo-de-request-15)
+    - [Corpo da Requisição:](#corpo-da-requisição-14)
+    - [Exemplo de Response:](#exemplo-de-response-15)
+    - [Possíveis Erros:](#possíveis-erros-15)
+  - [4. **Reviews**](#4-reviews)
+    - [Endpoints](#endpoints-3)
+  - [4.1 **Criando uma review**](#41-criando-uma-review)
+    - [`/reviews`](#reviews)
+    - [Exemplo de Request:](#exemplo-de-request-16)
+    - [Corpo da Requisição:](#corpo-da-requisição-15)
+    - [Exemplo de Response:](#exemplo-de-response-16)
+    - [Possíveis Erros:](#possíveis-erros-16)
+    - [4.2. **Listar todos as reviews**](#42-listar-todos-as-reviews)
+    - [`/reviews`](#reviews-1)
+    - [Exemplo de Request:](#exemplo-de-request-17)
+    - [Corpo da Requisição:](#corpo-da-requisição-16)
+    - [Exemplo de Response:](#exemplo-de-response-17)
+    - [Possíveis Erros:](#possíveis-erros-17)
+    - [4.3 **listando Review por id**](#43-listando-review-por-id)
+    - [`/reviews/:id`](#reviewsid)
+    - [Exemplo de Request:](#exemplo-de-request-18)
+    - [Exemplo de Response:](#exemplo-de-response-18)
+    - [Possíveis Erros:](#possíveis-erros-18)
+    - [4.4. **Atualização uma reviews**](#44-atualização-uma-reviews)
+    - [`/reviews/:id`](#reviewsid-1)
+    - [Exemplo de Request:](#exemplo-de-request-19)
+    - [Corpo da Requisição:](#corpo-da-requisição-17)
+    - [Exemplo de Response:](#exemplo-de-response-19)
+    - [Possíveis Erros:](#possíveis-erros-19)
+    - [4.5. \**deleção da review*](#45-deleção-da-review)
+    - [`/reviews/:id`](#reviewsid-2)
+    - [Exemplo de Request:](#exemplo-de-request-20)
+    - [Corpo da Requisição:](#corpo-da-requisição-18)
+    - [Exemplo de Response:](#exemplo-de-response-20)
+    - [Possíveis Erros:](#possíveis-erros-20)
 ---
 ## 1. Visão Geral
 
@@ -451,3 +545,912 @@ Content-type: application/json
 
 ---
 
+## 2. **user_image**
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+O objeto User é definido como:
+
+| Campo       | Tipo    | Descrição                                  |
+| ----------  | ------- | ------------------------------------------ |
+| id          | string  | Identificador único da imagem              |
+| user_image  | arquivo | arquivo de imagem                          |
+| user        | objeto  | objeto User define o usuario dono da imagem|
+
+### Endpoints
+
+| Método | Rota               | Descrição                 |
+| ------ | -------------------| ------------------------- |
+| POST   | /users/image/      | Criação de imagem.        |
+| GET    | /users/image/      | Lista todas as imagens    |
+| GET    | /users/image/:id   | Lista uma imagem          |
+| PATCH  | /users/image/:id   | Atualiza a imagem         |
+| DELETE | /users/image/:id   | Deleta a imagem           |
+
+---
+
+### 2.1. **Criação de uma imagem**
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+### `/users/image/`
+
+### Exemplo de Request:
+```
+POST /users/image
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type:multpart form
+```multpart form
+
+
+```
+### Corpo da Requisição:
+
+WebKitFormBoundary123456789
+ user_image: arquivo de imagem
+WebKitFormBoundary123456789
+
+### Exemplo de Response:
+
+```
+201 Created
+
+```
+
+```json
+[
+{
+	"id": 1,
+	"user_image": "http://127.0.0.1:8000/media/media/WhatsApp_Image_2022-12-03_at_19.54.56.jpeg",
+	"user": 2
+}
+]
+```
+
+
+### Possíveis Erros:
+
+| Código do Erro  | Descrição                         |
+| --------------- | --------------------------------- |
+| 400 Bad request | missing authorization token.      |
+| 403 forbidden   | Invalid token.                    |
+| 400 Bad request | This image is already registered. |
+
+
+---
+
+### 2.2 **listando todas as imagens** 
+ 
+[ Voltar para os Endpoints ](#5-endpoints)
+
+### `/users/image`
+
+### Exemplo de Request:
+
+```
+GET /users/image
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: None
+Content-type: application/json
+```
+
+### Corpo da Requisição:
+
+```json
+Vazio
+```
+
+### Exemplo de Response:
+
+```
+200 Ok
+```
+
+```json
+[
+{
+	"id": 1,
+	"user_image": "http://127.0.0.1:8000/media/media/WhatsApp_Image_2022-12-03_at_19.54.56.jpeg",
+	"user": 2
+}
+]
+```
+### Possíveis Erros:
+
+Nenhum, o máximo que pode acontecer é retornar uma lista vazia.
+
+---
+
+### 2.3 **listando imagem por id**
+
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+
+### `/users/image/:id`
+
+
+### Exemplo de Request:
+
+```
+GET /users/image
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization:Bearer Token
+Content-type: application/json
+```
+
+### Corpo da Requisição:
+
+```json
+Vazio
+```
+
+### Exemplo de Response:
+
+```
+200 Ok
+```
+
+```json
+[
+{
+	"id": 1,
+	"user_image": "http://127.0.0.1:8000/media/media/WhatsApp_Image_2022-12-03_at_19.54.56.jpeg",
+	"user": 2
+}
+]
+```
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                     |
+| ---------------- | ----------------------------- |
+| 400 Bad request  | missing authorization token.  |
+| 403 forbidden    | Invalid token.                |
+| 404 not found    | image not found.              |
+
+---
+
+### 2.4 **editando imagem**
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+
+### `/users/image/:id`
+
+
+### Exemplo de Request:
+```
+POST /users/image/:id
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type:multpart form
+```
+
+### Corpo da Requisição:
+
+multpart form
+```
+WebKitFormBoundary123456789
+ user_image: arquivo de imagem
+WebKitFormBoundary123456789
+```
+### Exemplo de Response:
+
+```
+200 Ok
+```
+
+```json
+[
+{
+	"id": 1,
+	"user_image": "http://127.0.0.1:8000/media/media/WhatsApp_Image_2022-12-03_at_19.54.56.jpeg",
+	"user": 2
+}
+]
+```
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                     |
+| ---------------- | ----------------------------- |
+| 400 Bad request  | missing authorization token.  |
+| 403 forbidden    | Invalid token.                |
+| 404 not found    | image not found.              |
+
+---
+
+### 2.5 **Deletando Imagem** 
+
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+
+### `/users/image/:id`
+
+
+### Exemplo de Request:
+```
+POST /users/image/:id
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+
+```
+### Corpo da Requisição:
+
+```   json Vazio
+```
+
+### Exemplo de Response:
+
+```
+204 OK
+```
+
+```  
+ json Vazio
+```
+
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                                      |
+| ---------------- | -----------------------------------------------|
+| 400 Bad request  | Missing authorization token.                   |
+| 403 forbidden    | Invalid token.                                 |
+| 404 not found    | image not found.                               |
+| 401 unauthorized | Only superusers can delete anothers image.     |
+
+---
+
+
+## 3. **Games**
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+O objeto Game é definido como:
+
+| Campo             | Tipo    | Descrição                                            |
+| ----------------- | ------- | ---------------------------------------------------- |
+| id                | string  | Identificador único do game                          |
+| game_name         | string  | O nome do game                                       |
+| description       | string  | descrição do game                                    |
+| game_logo         | string  | url da imagem do game                                |
+| made_by           | string  | empresa ou criador do game                           |
+| users_avaliations | integer | é a media de todas avaliações de usuarios            |
+| number_of_reviews | integer | numero de usuarios que fizeram reviews desse game    |
+| genders           | array   | array de um ou mais objetos definindo genero do game |
+
+### Endpoints
+
+| Método | Rota               | Descrição                                 |
+| ------ | -------------------| ------------------------------------------|
+| POST   | /games/            | Criação de game                           |
+| GET    | /games/            | Lista todas lista todos os games          |
+| GET    | /games/:id         | Lista um game                             |
+| PATCH  | /games/:id         | Atualiza o game                           |
+| DELETE | /games/:id         | Deleta o game                             |
+
+---
+
+### 3.1 **Criação de um game**
+
+### `/games`
+
+### Exemplo de Request:
+
+```
+POST /games
+Host: https://dubairrobackend.onrender.com/
+Authorization: bearer token
+Content-type: application/json
+
+```
+
+### Corpo da Requisição:
+
+```json
+
+[
+  {
+    "id": 1,
+    "name_game": "The Legend of Zelda: Breath of the Wild",
+    "description": "The Legend of Zelda: Breath of the Wild is an action-adventure game...",
+    "game_logo": "http://example.com/media/zelda.jpg",
+    "made_by": "Nintendo",
+    "genders": [
+      {
+        "name": "Adventure",
+      },
+      {
+        "name": "Action",
+      }
+    ]
+  }
+  
+]
+  
+
+
+```
+
+OBS.: Chaves não presentes no schema serão removidas. 
+      Se o is_superuser não for fornecido sera automaticamnte prenchido como false. 
+
+### Exemplo de Response:
+
+```
+201 Created
+
+```
+
+```json
+[
+	{
+  "id": 1,
+  "name_game": "The Legend of Zelda: Breath of the Wild",
+  "description": "The Legend of Zelda: Breath of the Wild is an action-adventure game...",
+  "game_logo": "http://example.com/media/zelda.jpg",
+  "made_by": "Nintendo",
+  "users_avaliations": 8.5,
+  "number_of_reviews": 10,
+  "genders": [
+    {
+      "id": 1,
+      "name": "Adventure",
+      "created_at": "2022-01-01"
+    },
+    {
+      "id": 2,
+      "name": "Action",
+      "created_at": "2022-01-01"
+    }
+  ]
+}
+]
+```
+
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                                          |
+| ---------------  | ---------------------------------------------------|
+| 400 Bad request  |  Game with this name_game already exists.          |
+| 400 Bad request  |  name_game This field may not be blank.            |
+| 400 Bad request  |  genders this list may not be empty.               |
+| 400 Bad request  |  Missing authorization token.                      |
+| 403 forbidden    |  Invalid token.                                    |
+| 401 unauthorized |  Only superusers can delete games.                 |
+
+--- 
+
+### 3.2 **listando Games**
+
+ 
+[ Voltar para os Endpoints ](#5-endpoints)
+
+### `/games/`
+
+### Exemplo de Request:
+
+```
+GET /games
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: None
+Content-type: application/json
+```
+
+### Corpo da Requisição:
+
+```json
+Vazio
+```
+
+### Exemplo de Response:
+
+```
+200 Ok
+```
+
+```json
+[
+	{
+  "id": 1,
+  "name_game": "The Legend of Zelda: Breath of the Wild",
+  "description": "The Legend of Zelda: Breath of the Wild is an action-adventure game...",
+  "game_logo": "http://example.com/media/zelda.jpg",
+  "made_by": "Nintendo",
+  "users_avaliations": 8.5,
+  "number_of_reviews": 10,
+  "genders": [
+    {
+      "id": 1,
+      "name": "Adventure",
+      "created_at": "2022-01-01"
+    },
+    {
+      "id": 2,
+      "name": "Action",
+      "created_at": "2022-01-01"
+    }
+  ]
+}
+]
+```
+### Possíveis Erros:
+
+Nenhum, o máximo que pode acontecer é retornar uma lista vazia.
+
+---
+
+### 3.3 **listando Games por id**
+
+[ Voltar aos Endpoints ](#5-endpoints)
+
+### `/games/:id`
+
+### Exemplo de Request:
+
+GET /user
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type: application/json
+
+```
+
+### Corpo da Requisição:
+
+```json
+Vazio
+```
+
+### Exemplo de Response:
+
+```
+200 OK
+```
+
+```json
+[
+	{
+  "id": 1,
+  "name_game": "The Legend of Zelda: Breath of the Wild",
+  "description": "The Legend of Zelda: Breath of the Wild is an action-adventure game...",
+  "game_logo": "http://example.com/media/zelda.jpg",
+  "made_by": "Nintendo",
+  "users_avaliations": 8.5,
+  "number_of_reviews": 10,
+  "genders": [
+    {
+      "id": 1,
+      "name": "Adventure",
+      "created_at": "2022-01-01"
+    },
+    {
+      "id": 2,
+      "name": "Action",
+      "created_at": "2022-01-01"
+    }
+  ]
+}
+]
+```
+
+### Possíveis Erros:
+
+| Código do Erro | Descrição       |
+| -------------- | --------------- |
+| 404 Not Found  | game not found. |
+
+---
+
+### 3.4. **Atualização do game**
+
+[ Voltar aos Endpoints ](#5-endpoints)
+
+### `/games/:id`
+
+```
+Pode ser atualizado todos os campos com exeção de id,users_avaliation e number_of_reviews.
+```
+
+### Exemplo de Request:
+
+```
+
+PATCH /gamer/:id
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type: application/json
+
+```
+
+### Corpo da Requisição:
+
+```json
+{
+  "game_name": "Zeldinha",
+  
+}
+```
+
+### Exemplo de Response:
+
+```
+200 OK
+```
+
+```json
+[
+	{
+  "id": 1,
+  "name_game": "Zeldinha",
+  "description": "The Legend of Zelda: Breath of the Wild is an action-adventure game...",
+  "game_logo": "http://example.com/media/zelda.jpg",
+  "made_by": "Nintendo",
+  "users_avaliations": 8.5,
+  "number_of_reviews": 10,
+  "genders": [
+    {
+      "id": 1,
+      "name": "Adventure",
+      "created_at": "2022-01-01"
+    },
+    {
+      "id": 2,
+      "name": "Action",
+      "created_at": "2022-01-01"
+    }
+  ]
+}
+]
+```
+
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                                      |
+| ---------------- | -------------------------------------          |
+| 400 Bad request  | missing authorization token.                   |
+| 403 forbidden    | Invalid token.                                 |
+| 401 unauthorized | Is not able to update users_avaliations value. |
+| 401 unauthorized | Is not able to update number_of_reviews value. |
+| 401 unauthorized | Is not able to update id.                      |
+| 404 not found    | game not found.                                |
+
+---
+
+### 3.5. **deleção do game*
+
+[ Voltar aos Endpoints ](#5-endpoints)
+
+### `/games/:id`
+
+### Exemplo de Request:
+
+```
+
+DELETE /users/:id
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type: application/json
+
+```
+
+### Corpo da Requisição:
+
+```json
+Vazio
+```
+
+### Exemplo de Response:
+
+```
+204 OK
+```
+
+```json
+Vazio
+```
+
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                     |
+| ---------------- | ----------------------------- |
+| 400 Bad request  | missing authorization token.. |
+| 403 forbidden    | Invalid token.                |
+| 404 not found    | game not found.               |
+
+
+---
+
+## 4. **Reviews**
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+O objeto User é definido como:
+
+| Campo         | Tipo     | Descrição                               |
+| ------------- | -------- | --------------------------------------- |
+| id            | number   | Identificador único de review           |
+| review        | string   | avaliação do game feito pelo usuario.   |
+| created_at    | date     | Data de cadastro de criação da review   |
+| user          | number   | id do usuario que fez a review.         |
+| game          | number   | id do game que esta recebendo a review  |
+| rate          | number   | nota de 0 a 10 definida pelo usuario    |
+| user_email    | string   | email do usuario que fez a review       |
+
+
+### Endpoints
+
+| Método | Rota           | Descrição                             |
+| ------ | -------------- | ------------------------------------- |
+| POST   | /pet           | Criação de uma review                 |
+| GET    | /pet           | Lista todos as reviews                |
+| GET    | /pet/:id       | Lista a review pelo id                |
+| PATCH  | /pet/:id       | Atualiza dados da review              |
+| DELETE | /pet/:id       | deleção da review                     |
+
+---
+
+## 4.1 **Criando uma review**
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+### `/reviews`
+
+### Exemplo de Request:
+
+```
+POST /reviews
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type: application/json
+```
+
+### Corpo da Requisição:
+
+```json
+{
+	"review":"jogo brabo dms slk tem como não",
+	"game" : 51,
+	"rate":7
+}
+```
+
+### Exemplo de Response:
+
+```
+201 Created
+```
+
+```json
+{
+		"id": 38,
+		"review": "top",
+		"user": 4,
+		"game": 51,
+		"rate": 7,
+		"email_usuario": "havyel@email.com"
+	}
+```
+
+### Possíveis Erros:
+```
+
+| Código do Erro  | Descrição                                       |
+| --------------- | ------------------------------------------------|
+| 403 forbidden   | Invalid token.                                  |
+| 400 Bad request | missing authorization token.                    |
+| 400 Bad request | game: Invalid pk - object does not exist.|
+| 400 Bad request | "\"11\" is not a valid choice.                  |
+
+Obs: o field rate aceita penas inteiros de 0 a 10, qualquer valor diferente disso retornara um erro com valor colocado junto a um :  is not a valid choice.
+```
+---
+
+### 4.2. **Listar todos as reviews**
+
+[ Voltar para os Endpoints ](#5-endpoints)
+
+### `/reviews`
+
+### Exemplo de Request:
+
+```
+GET /pet
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: None
+Content-type: application/json
+```
+
+### Corpo da Requisição:
+
+```json
+Vazio
+```
+
+### Exemplo de Response:
+
+```
+200 Ok
+```
+
+```json
+[
+	{
+		"id": 1,
+		"review": "jogo brabo dms slk tem como não",
+		"user": 2,
+		"game": 1,
+		"rate": 7,
+		"review_made_by": "exemplo2"
+	}
+]
+```
+
+### Possíveis Erros:
+
+Nenhum, o máximo que pode acontecer é retornar uma lista vazia.
+
+---
+
+
+### 4.3 **listando Review por id**
+
+[ Voltar aos Endpoints ](#5-endpoints)
+
+### `/reviews/:id`
+
+### Exemplo de Request:
+
+GET /reviews/:id
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type: application/json
+
+```
+
+### Corpo da Requisição:
+
+```json
+Vazio
+```
+
+### Exemplo de Response:
+
+```
+200 OK
+```
+
+```json
+[
+	{
+		"id": 1,
+		"review": "jogo brabo dms slk tem como não",
+		"user": 2,
+		"game": 1,
+		"rate": 7,
+		"review_made_by": "exemplo2"
+	}
+]
+```
+
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                     |
+| ---------------- | ----------------------------- |
+| 400 Bad request  | missing authorization token.. |
+| 403 forbidden    | Invalid token.                |
+| 404 not found    | review not found.             |
+```
+---
+```
+### 4.4. **Atualização uma reviews**
+
+[ Voltar aos Endpoints ](#5-endpoints)
+
+### `/reviews/:id`
+
+```
+É permitido atualizar apenas o campo review e o campo rate.
+```
+
+### Exemplo de Request:
+
+```
+
+PATCH /gamer/:id
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type: application/json
+
+```
+
+### Corpo da Requisição:
+
+```json
+{
+  "review": "mudei de ideia na verdade o jogo e mais ou menos ",
+  "rate":5
+  
+}
+```
+
+### Exemplo de Response:
+
+```
+200 OK
+```
+
+```json
+[
+	
+
+{
+		"id": 38,
+		"review": "mudei de ideia na verdade o jogo e mais ou menos",
+		"user": 4,
+		"game": 51,
+		"rate": 5,
+		"review_made_by": "exemplo2"
+	}
+
+
+]
+```
+
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                                      |
+| ---------------- | -------------------------------------          |
+| 400 Bad request  | missing authorization token.                   |
+| 403 forbidden    | Invalid token.                                 |
+| 401 unauthorized | Is not able to update id value.                |
+| 401 unauthorized | Is not able to update review_made_by  value.   |
+| 401 unauthorized | Is not able to update game value.              | 
+| 401 unauthorized | Is not able to update user value.              |
+| 404 not found    | review not found.                              |
+
+---
+
+### 4.5. **deleção da review*
+
+[ Voltar aos Endpoints ](#5-endpoints)
+
+### `/reviews/:id`
+
+### Exemplo de Request:
+
+```
+
+DELETE /reviews/:id
+Host: https://mais-que-um-pet.herokuapp.com
+Authorization: Bearer token
+Content-type: application/json
+
+```
+
+### Corpo da Requisição:
+
+```json
+Vazio
+```
+
+### Exemplo de Response:
+
+```
+204 OK
+```
+
+```json
+Vazio
+```
+
+### Possíveis Erros:
+
+| Código do Erro   | Descrição                     |
+| ---------------- | ----------------------------- |
+| 400 Bad request  | missing authorization token.. |
+| 403 forbidden    | Invalid token.                |
+| 404 not found    | review not found.             |
+
+
+---

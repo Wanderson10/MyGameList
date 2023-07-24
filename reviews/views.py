@@ -10,7 +10,7 @@ from rest_framework.response import Response
 import ipdb
 class ReviewViews(generics.ListCreateAPIView):
     authentication_classes=[JWTAuthentication]
-    permission_classes =[IsAuthenticated]
+    permission_classes =[IsAuthenticatedOrReadOnly]
     serializer_class = ReviewSeializers
 
     queryset = Review.objects.all()
